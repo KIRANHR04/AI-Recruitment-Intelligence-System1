@@ -1,11 +1,11 @@
 AI Recruitment Intelligence System
-Project Summary
+ Project Summary
 
 The AI Recruitment Intelligence System is a semantic search–based recruitment platform that intelligently matches resumes with job descriptions using vector embeddings.
 
 Instead of relying on keyword matching, this system uses transformer-based embeddings and cosine similarity to understand contextual meaning between resumes and job postings.
 
-Problem Statement
+ Problem Statement
 
 Traditional recruitment systems:
 
@@ -25,7 +25,7 @@ Performing similarity search
 
 Ranking jobs based on contextual similarity
 
-How The System Works
+ How The System Works
 Step 1 – Add Job
 
 Recruiter enters Job ID, Title, Description
@@ -52,30 +52,30 @@ Top matching jobs returned with similarity score
 
 System Architecture
 Streamlit UI
-↓
+      ↓
 Sentence Transformer Model
-↓
+      ↓
 Vector Embedding (384-dim)
-↓
+      ↓
 Endee Vector Database
-↓
+      ↓
 Cosine Similarity Search
-↓
+      ↓
 Matching Results
 
-Technologies Used
-Component Technology
-Frontend Streamlit
-Backend Python
-Embedding Model sentence-transformers/all-MiniLM-L6-v2
-Vector Database Endee
-Containerization Docker
-PDF Parsing PyPDF2
-Requirements
+## Technologies Used
+Component	Technology
+Frontend	Streamlit
+Backend	Python
+Embedding Model	sentence-transformers/all-MiniLM-L6-v2
+Vector Database	Endee
+Containerization	Docker
+PDF Parsing	PyPDF2
+# Requirements
 
 To run this project locally, the reviewer needs:
 
-1 Software Requirements
+ Software Requirements
 
 Python 3.10+
 
@@ -83,7 +83,7 @@ Docker Desktop
 
 Git (optional)
 
-Setup & Execution Instructions
+# Setup & Execution Instructions
 Step 1 – Install Python Dependencies
 
 From project root:
@@ -97,9 +97,11 @@ Navigate to the endee folder:
 cd endee
 docker compose up -d
 
+
 Verify it is running:
 
 docker ps
+
 
 The Endee UI will be available at:
 
@@ -125,11 +127,12 @@ From project root:
 
 streamlit run app.py
 
+
 The app will open at:
 
 http://localhost:8501
 
-Features Implemented
+# Features Implemented
 
 Add Job Descriptions
 
@@ -143,7 +146,7 @@ Cosine Similarity Scoring
 
 Vector Storage in Endee
 
-Embedding Configuration
+ Embedding Configuration
 
 Model: all-MiniLM-L6-v2
 
@@ -153,7 +156,7 @@ Similarity Metric: Cosine
 
 Vector Precision: float16
 
-Future Improvements
+ Future Improvements
 
 REST API with FastAPI
 
@@ -167,13 +170,13 @@ Production-grade Vector DB
 
 Candidate Ranking Analytics
 
-Project Status
+ Project Status
 
 Functional AI Prototype
 Core semantic matching implemented
 Vector database integrated
 Ready for demonstration and evaluation
 
-Author
+ Author
 
 Kiran HR
